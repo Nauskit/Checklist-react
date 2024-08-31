@@ -3,8 +3,12 @@ import React, { useState } from 'react'
 export const TodoForm = ({ addTodo }) => {
     const [value, setValue] = useState("")
     const handleSubmit = e => {
-        e.preventDefault();
-        addTodo(value)
+        if (value == "") {
+            alert("Input your task")
+        } else {
+            e.preventDefault();
+            addTodo(value)
+        }
     }
 
     return (
