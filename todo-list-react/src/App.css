@@ -78,3 +78,14 @@ p {
 .fa-trash {
     margin-left: .75rem;
 }
+
+.incompleted {
+    color: #fff;
+    cursor: pointer;
+}
+
+.completed {
+    color: #ffffff4d;
+    text-decoration: line-through;
+    cursor: pointer;
+}
